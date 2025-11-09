@@ -1,3 +1,4 @@
+local boxes = require "entities.boxes"
 local press_functions = {
   down = function()
   end,
@@ -8,6 +9,7 @@ local press_functions = {
   q = function()
   end,
   r = function()
+    boxes:load()
   end,
   space = function()
   end,

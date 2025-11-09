@@ -6,8 +6,9 @@
 -- lick.reset          = true
 
 function love.load()
-  NUM_BOXES             = 300
-  GameWidth, GameHeight = 960, 640
+  NUM_BOXES             = 50
+  -- GameWidth, GameHeight = 960, 640
+  GameWidth, GameHeight = love.window.getMode()
   input                 = require 'input'
 
   local game            = require 'screens.game'
